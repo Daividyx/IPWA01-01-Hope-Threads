@@ -44,9 +44,9 @@ const Footer = () => {
         {/** Bereich für Footer-Navigation und Social Links */}
         <div className='flex flex-col lg:flex-row justify-center items-center gap-5 md:mr-10'>
           {/** Links zu Impressum, Datenschutz und AGB */}
-          <Link to='/IPWA01-01-Hope-Threads/Impressum'>Impressum</Link>
-          <Link to='/IPWA01-01-Hope-Threads/Datenschutz'>Datenschutz</Link>
-          <Link to='/IPWA01-01-Hope-Threads/Agb'>AGB</Link>
+          <Link to='/Impressum'>Impressum</Link>
+          <Link to='/Datenschutz'>Datenschutz</Link>
+          <Link to='/Agb'>AGB</Link>
         </div>
         {/** Social Media Links */}
         <div className='flex flex-col lg:flex-row justify-center items-center gap-4 mx-5'>

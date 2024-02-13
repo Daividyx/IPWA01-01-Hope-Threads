@@ -15,7 +15,7 @@ const Start = () => {
           Wir brauchen deine Hilfe <br /> um die Welt besser zu machen
         </h1>
         {/* Link zur Spendenseite */}
-        <Link to='/IPWA01-01-Hope-Threads/Spenden'>
+        <Link to='/Spenden'>
           <button className='max-w-[500px] md:text-l lg:text-xl mt-7 uppercase w-full bg-transparent text-black font-bold py-3 px-3 border border-black hover:border-[3px] rounded'>
             Spende jetzt Kleidung
           </button>
