@@ -251,7 +251,7 @@ const Spenden = () => {
           </p>
           <div></div>
 
-          <div className=' flex flex-col gap-3 mt-10'>
+          <div className=' flex flex-col gap-3 mt-10 mx-5'>
             {/** Anzeige wenn Abholung gewählt wurde*/}
             <div className={`${abholung ? "block" : "hidden"}`}>
               <p>
