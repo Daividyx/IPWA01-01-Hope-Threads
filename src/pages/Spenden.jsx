@@ -108,11 +108,11 @@ const Spenden = () => {
              *
              */}
 
-            <div className='flex flex-col gap-5 mt-10'>
+            <div className='flex flex-col gap-5 mt-10 '>
               <div className='flex  justify-between'>
                 <input
                   id='Vorname'
-                  className='p-2 rounded-lg h-[35px] mr-5'
+                  className='p-2 rounded-lg h-[35px] mr-3 w-[160px]'
                   type='text'
                   placeholder='Vorname'
                   value={vorname}
@@ -123,7 +123,7 @@ const Spenden = () => {
 
                 <input
                   id='Nachname'
-                  className='p-2 rounded-lg h-[35px]'
+                  className='p-2 rounded-lg h-[35px] w-[160px]'
                   type='text'
                   placeholder='Nachname'
                   value={nachname}
