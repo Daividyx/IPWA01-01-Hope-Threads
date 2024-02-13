@@ -13,46 +13,21 @@ import Agb from "./pages/Agb.jsx"
 import Impressum from "./pages/Impressum.jsx"
 
 //Routenobjekte zu den verschiedenen Seiten erstellen
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    { path: "/", element: <Startseite /> },
+    { path: "/Start", element: <Startseite /> },
+    { path: "/Datenschutz", element: <Datenschutz /> },
+    { path: "/Faq", element: <Faq /> },
+    { path: "/Kontakt", element: <Kontakt /> },
+    { path: "/Spenden", element: <Spenden /> },
+    { path: "/Agb", element: <Agb /> },
+    { path: "/Impressum", element: <Impressum /> },
+  ],
   {
-    path: "/IPWA01-01-Hope-Threads/",
-    element: <Startseite />,
-  },
-  {
-    path: "/IPWA01-01-Hope-Threads/Start",
-    element: <Startseite />,
-  },
-
-  {
-    path: "/IPWA01-01-Hope-Threads/Datenschutz",
-    element: <Datenschutz />,
-  },
-
-  {
-    path: "/IPWA01-01-Hope-Threads/Faq",
-    element: <Faq />,
-  },
-
-  {
-    path: "/IPWA01-01-Hope-Threads/Kontakt",
-    element: <Kontakt />,
-  },
-
-  {
-    path: "/IPWA01-01-Hope-Threads/Spenden",
-    element: <Spenden />,
-  },
-
-  {
-    path: "/IPWA01-01-Hope-Threads/Agb",
-    element: <Agb />,
-  },
-
-  {
-    path: "/IPWA01-01-Hope-Threads/Impressum",
-    element: <Impressum />,
-  },
-])
+    basename: "/IPWA01-01-Hope-Threads",
+  }
+)
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
