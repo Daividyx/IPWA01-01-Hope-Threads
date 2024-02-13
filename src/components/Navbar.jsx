@@ -19,7 +19,7 @@ const Navbar = () => {
     <header className='fixed top-0 z-50 shadow-lg w-full'>
       <nav className='text-black w-full flex justify-between bg-orange-300'>
         {/* Logo und Name der Website */}
-        <Link to='/IPWA01-01-Hope-Threads/Start'>
+        <Link to='/Start'>
           <div className='flex items-center px-2 lg:px-5 py-2 lg-[350px] w-[260px]'>
             <img className='w-[100px]' src={Logo} alt='Logo' />
             <h1 className='lg:text-2xl px-2 lg:px-7 text-[20px]'>
@@ -34,19 +34,19 @@ const Navbar = () => {
             {/* Links zur Startseite, FAQ und Kontakt */}
             <Link
               className='uppercase text-[13px] lg:text-[16px] xl:text-[18px] hover:font-semibold'
-              to='/IPWA01-01-Hope-Threads/Start'
+              to='/Start'
             >
               Start
             </Link>
             <Link
               className='uppercase text-[13px] lg:text-[16px] xl:text-[18px] hover:font-semibold'
-              to='/IPWA01-01-Hope-Threads/Faq'
+              to='/Faq'
             >
               FAQ
             </Link>
             <Link
               className='uppercase text-[13px] lg:text-[16px] xl:text-[18px] hover:font-semibold'
-              to='/IPWA01-01-Hope-Threads/Kontakt'
+              to='/Kontakt'
             >
               Kontakt
             </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
           {/* Spenden-Button */}
           <div className='donateButton pb-3 md:block hidden'>
-            <Link to='/IPWA01-01-Hope-Threads/Spenden'>
+            <Link to='/Spenden'>
               <button className='uppercase w-full bg-transparent text-black font-bold py-2 px-4 border border-black hover:border-[3px] rounded'>
                 Jetzt Spenden
               </button>
@@ -99,22 +99,22 @@ const Navbar = () => {
           <ul className='p-4'>
             {/* Links zur Startseite, FAQ, Kontakt und Spenden */}
             <li className='p-4 border-b border-black'>
-              <Link className='uppercase' to='/IPWA01-01-Hope-Threads/Start'>
+              <Link className='uppercase' to='/Start'>
                 Start
               </Link>
             </li>
             <li className='p-4 border-b border-black'>
-              <Link className='uppercase' to='/IPWA01-01-Hope-Threads/Faq'>
+              <Link className='uppercase' to='/Faq'>
                 FAQ
               </Link>
             </li>
             <li className='p-4 border-b border-black'>
-              <Link className='uppercase' to='/IPWA01-01-Hope-Threads/Kontakt'>
+              <Link className='uppercase' to='/Kontakt'>
                 Kontakt
               </Link>
             </li>
             <li className='p-4'>
-              <Link to='/IPWA01-01-Hope-Threads/Spenden'>
+              <Link to='/Spenden'>
                 <button className='uppercase w-full bg-transparent hover:text-2xl text-black font-bold hover:text-black py-2 px-4 border border-black hover:border-[3px] rounded'>
                   Jetzt Spenden
                 </button>
