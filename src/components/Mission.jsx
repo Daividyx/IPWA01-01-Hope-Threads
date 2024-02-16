@@ -1,5 +1,6 @@
 import React from "react"
 import image1 from "../assets/childrenCamera.jpg"
+import { Link } from "react-router-dom"
 
 // Die Mission-Komponente definiert den Abschnitt "Unsere Mission" der Anwendung
 const Mission = () => {
@@ -23,9 +24,16 @@ const Mission = () => {
             ut. Recusandae culpa non libero obcaecati mollitia cupiditate rerum.
           </p>
         </div>
-        {/* Abschnitt mit Bildinhalt */}
+        {/* Bild */}
         <div>
-          <img className='mt-[100px]' src={image1} alt='' />
+          <img className='mt-[100px] rounded-2xl' src={image1} alt='' />
+          {/* Quellenangabe des Bildes */}
+          <p className='text-end mr-3 mt-2'>
+            Quelle: Pexels von {""}
+            <Link className='font-semibold ' to=' https://pixabay.com'>
+              Pixabay
+            </Link>
+          </p>
         </div>
       </div>
     </div>

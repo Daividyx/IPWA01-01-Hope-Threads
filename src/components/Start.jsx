@@ -21,14 +21,19 @@ const Start = () => {
           </button>
         </Link>
       </div>
-      {/* Bereich für das Hintergrundbild */}
+      {/* Bild*/}
       <div className='max-w-[1200px] h-[800px] m-auto w-full py-2 px-4'>
-        {/* Hintergrundbild */}
         <div
           style={{ backgroundImage: `url(${childrenImage1})` }}
           className='w-full h-full rounded-2xl bg-center bg-cover'
         ></div>
-        {/* Keine Pfeile und Navigationspunkte */}
+        {/* Quellenangabe des Bildes */}
+        <p className='text-start text-black ml-3 mt-2'>
+          Quelle: JeanetteAtherton von {""}
+          <Link className='font-semibold' to='https://pixabay.com/'>
+            Pixabay
+          </Link>
+        </p>
       </div>
     </div>
   )
