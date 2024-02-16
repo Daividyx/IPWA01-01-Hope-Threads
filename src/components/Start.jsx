@@ -8,10 +8,10 @@ const Start = () => {
   window.scrollTo({ top: 0, behavior: "smooth" })
 
   return (
-    <div className='mt-[100px]'>
+    <div className='mt-[100px] flex flex-col'>
       {/* Abschnitt mit dem Seiteninhalt */}
-      <div className='max-w-[1200px] p-[80px] mx-auto text-center'>
-        <h1 className='font-semibold text-2xl md:text-4xl lg:text-5xl text-yellow-900'>
+      <div className='max-w-[1200px] mt-[80px] mb-[40px] lg:mb-[80px] mx-auto text-center'>
+        <h1 className='font-semibold text-3xl md:text-4xl lg:text-5xl text-yellow-900'>
           Wir brauchen deine Hilfe <br /> um die Welt besser zu machen
         </h1>
         {/* Link zur Spendenseite */}
