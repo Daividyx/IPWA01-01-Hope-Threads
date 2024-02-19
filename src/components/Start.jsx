@@ -11,7 +11,7 @@ const Start = () => {
     <div className='mt-[100px] flex flex-col'>
       {/* Abschnitt mit dem Seiteninhalt */}
       <div className='max-w-[1200px] mt-[80px] mb-[40px] lg:mb-[80px] mx-auto text-center'>
-        <h1 className='font-semibold text-3xl md:text-4xl lg:text-5xl text-yellow-900'>
+        <h1 className='font-semibold text-xl md:text-4xl lg:text-5xl text-yellow-900'>
           Wir brauchen deine Hilfe <br /> um die Welt besser zu machen
         </h1>
         {/* Link zur Spendenseite */}
@@ -22,11 +22,12 @@ const Start = () => {
         </Link>
       </div>
       {/* Bild*/}
-      <div className='max-w-[1200px] h-[800px] m-auto w-full py-2 px-4'>
-        <div
-          style={{ backgroundImage: `url(${childrenImage1})` }}
-          className='w-full h-full rounded-2xl bg-center bg-cover'
-        ></div>
+      <div className='max-w-[1200px] h-[800px] m-auto w-full py-2 px-4   '>
+        <img
+          className=' w-full h-full object-cover object-center rounded-2xl'
+          src={childrenImage1}
+          alt=''
+        />
         {/* Quellenangabe des Bildes */}
         <p className='text-start text-black ml-3 mt-2'>
           Quelle: JeanetteAtherton von {""}

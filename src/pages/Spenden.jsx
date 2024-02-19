@@ -27,15 +27,31 @@ const Spenden = () => {
   }
 
   const handleSubmit = (e) => {
+    // Verhindert das Neuladen der Seite
     e.preventDefault()
 
-    if (abholung == true && !postleitzahl.startsWith("86")) {
-      alert(
-        "Entschuldige bitte! Du wohnst leider zu weit entfernt von unserer Geschäftsstelle. Abholungen können nur in unserem direkten Umfeld erfolgen. PLZ(86xxx)"
-      )
+    // Überprüfen, ob alle erforderlichen Felder ausgefüllt sind
+    if (
+      vorname === "" ||
+      nachname === "" ||
+      // Wenn Abholung ausgewählt ist, müssen auch die zusätzlichen Felder ausgefüllt sein
+      (abholung && (strasse === "" || postleitzahl === "" || ort === "")) ||
+      kriesengebiet === "" ||
+      kleidungsstück === "" ||
+      termin === ""
+    ) {
+      alert("Bitte füllen Sie alle erforderlichen Felder aus.")
       return
     }
 
+    // Überprüfe die Postleitzahl, falls Abholung ausgewählt ist
+    if (abholung && !postleitzahl.startsWith("86")) {
+      alert(
+        "Entschuldigen Sie bitte! Sie wohnen leider zu weit entfernt von unserer Geschäftsstelle. Abholungen können nur in unserem direkten Umfeld erfolgen. PLZ(86xxx)"
+      )
+      return
+    }
+    // Wenn alle Prüfungen erfolgreich waren wird submit auf true gesetzt
     setSubmit(true)
   }
 
@@ -145,9 +161,10 @@ const Spenden = () => {
                   id='strasse'
                   className='p-2 rounded-lg h-[35px]'
                   type='text'
-                  placeholder='Straße'
+                  placeholder='Straße und Hausnummer'
                   value={strasse}
                   onChange={(e) => setStrasse(e.target.value)}
+                  required
                 />
 
                 <input
@@ -235,7 +252,7 @@ const Spenden = () => {
         </form>
 
         {/** Bestätigung der Buchung
-         *    Wird nur angezeogt, wenn 'submit' true ist, also das Formular submitted wurde
+         *    Wird nur angezeogt, wenn 'submit' true ist, also das Formular erfolgreich submitted wurde
          *
          */}
         <div
